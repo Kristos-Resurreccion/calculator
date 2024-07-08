@@ -40,9 +40,15 @@ h1 {
     background-color: #438496;
     border: 24px outset #cd5360;
     padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 720px;
+    margin: 0 auto;
 }
 
 .display {
+    width: 100%;
     font-size: 48px;
     font-style: karla;
     background-color: #286da8;
@@ -51,22 +57,43 @@ h1 {
     border: 10px inset #cd5360;
 }
 
-.keypad {
+.keypad,
+.operators {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 32px;
+
 }
 
-.keypad p {
-    width: calc(33% - 24px);
+.keypad {
+    max-width: 80%;
+
+}
+
+.operators {
+    max-width: calc(20% - 12px);
+    display: flex;
+}
+
+.operators button {
+    width: 100%;
+}
+
+button {
     flex: 1 0 auto;
     background-color: #286da8;
     color: #fff;
     padding: 16px 32px;
     border: 10px outset #cd5360;
+    font-size: 24px;
+    font-family: martel;
 }
 
-.keypad p:hover {
+button:hover {
     border: 10px inset #cd5360;
+}
+
+.keypad button {
+    width: calc(33% - 24px);
 }
