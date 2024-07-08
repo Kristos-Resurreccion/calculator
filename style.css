@@ -55,6 +55,7 @@ h1 {
     color: #fff;
     padding: 16px 32px;
     border: 10px inset #cd5360;
+    height: 124px;
 }
 
 .keypad,
@@ -88,6 +89,7 @@ button {
     border: 10px outset #cd5360;
     font-size: 24px;
     font-family: martel;
+    text-align: center;
 }
 
 button:hover {
