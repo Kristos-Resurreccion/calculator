@@ -1,11 +1,72 @@
 /* colors:
-    Neutral:    #efefef
-    Sky Blue:   #caebf2
-    Gray:       #a9a9a9
-    Watermelon: #ff3b3f
+    Cool Blue:  #286da8
+    Warm Blue:  #438496
+    Warm Red:   #cd5360
+    Warm Brown: #b37d4e
+
+    Fonts
+    heading, button: Karla
+    Body:            Martel
 */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: karla;
+    color: #efefef;
+}
 
-body {
-    background-color: #efefef;
+h1 {
+    font-size: 64px;
+    text-shadow: 2px 4px #cd5360;
+}
+
+.banner {
+    padding: 32px;
+    background-color: #286da8;
+    text-align: center;
+}
+
+.calc-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.calculator {
+    background-color: #438496;
+    border: 24px outset #cd5360;
+    padding: 32px;
+}
+
+.display {
+    font-size: 48px;
+    font-style: karla;
+    background-color: #286da8;
+    color: #fff;
+    padding: 16px 32px;
+    border: 10px inset #cd5360;
+}
+
+.keypad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.keypad p {
+    width: calc(33% - 24px);
+    flex: 1 0 auto;
+    background-color: #286da8;
+    color: #fff;
+    padding: 16px 32px;
+    border: 10px outset #cd5360;
+}
+
+.keypad p:hover {
+    border: 10px inset #cd5360;
 }
