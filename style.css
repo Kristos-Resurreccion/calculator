@@ -99,3 +99,9 @@ button:hover {
 .keypad button {
     width: calc(33% - 24px);
 }
+
+.clear {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
